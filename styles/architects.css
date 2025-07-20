@@ -41,6 +41,10 @@
     color: #FFFFFF;
 }
 
+.orange {
+    color: #FF900E;  /* Orange */
+}
+
 
 /* Button */
 .btn-primary {
@@ -127,11 +131,53 @@
 
 
 
+/* Main Styles */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Teams Section Styles */
+.teams {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 130px;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;  /* Space between images */
+    padding: 60px;
+}
+
+.our-features {
+    max-width: 537px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.feature-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-spacing: 2px;
+    margin-top: 24px;
+    margin-bottom: 32px; 
+}
+
+
 
 
 
 /* Responsive Media Queries */
 
+
+/* Responsive for Mobile */
 @media screen and (max-width: 576px) {
     /* Button */
     .btn-primary {
@@ -154,7 +200,74 @@
         margin-top: 100px;
     }
 
+    /* Teams Section */
+    .teams {
+        flex-direction: column;
+        gap: 80px; /* Space between team image and features */
+    }
+
+    .team-img-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        padding: 20px; /* Smaller padding for mobile */
+    }
+
+    .our-features {
+        text-align: center; /* Center text for mobile */
+        padding: 20px; /* Smaller padding for mobile */
+        
+    }
+
+}
 
 
+/* Responsive for Tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* Button */
+    .btn-primary {
+        padding: 18px 28px;
+        font-size: 0.9rem;
+    }
+
+    /* Header */
+    .navbar {
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between;
+    }
+    .brand {
+        font-size: 2.4rem;
+        text-align: start;
+        padding-left: 14px; /* Add padding for better spacing */
+    }
+    .nav-links {
+        gap: 0px; /* Space between nav items */
+        text-align: center;
+    }
+    
+    /* Banner Title */
+    .banner-title {
+        font-size: 3.0rem; /* Adjusted font size for tablet */
+        margin-top: 70px;
+    }
+
+    /* Teams Section */
+    .teams {
+        flex-direction: column;
+        gap: 60px; /* Space between team image and features */
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablet */
+        padding: 20px; /* Adjusted padding for tablet */
+    }
+
+    .team-img-container img {
+        width: 100%; /* Responsive images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .our-features {
+        text-align: left; /* Left align text for tablet */
+        padding: 40px; /* Adjusted padding for tablet */
+    }
 }
 
