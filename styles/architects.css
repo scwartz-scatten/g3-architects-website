@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Shared Styles */
+.dark01 {
+    color: #131313;
+}
+
+.dark02 {
+    color: #424242;
+}
+
+.dark03 {
+    color: #727272;
+}
+
+.dark04 {
+    color: #A1A1A1;
+}
+
+.dark05 {
+    color: #D0D0D0;
+}
+
+.dark06 {
+    color: #E7E7E7;
+}
+
+.dark07 {
+    color: #F3F3F3;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+
+/* Button */
+.btn-primary {
+    background-color: #FF900E;  /* Orange */
+    color: #FFFFFF;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem; 
+    font-weight: 600;   /* if, 400 = normal; 600 = semi-bold */
+    cursor: pointer;
+}
+
+
+/* Header Styles */
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns items vertically */
+
+    max-width: 1440px;   /* Take 1440px width */
+    margin: 0 auto;      /* Centers the navbar */
+}
+
+.brand {
+    font-size: 2.8rem;   /* if, 16px = 1rem;  45px = 2.8125 */
+    font-weight: 700;    /* if, 400 = normal; 700 = bold */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: medium;
+}
+
+
+/* Banner Styles */
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.banner-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.banner-image {
+    width: 100%;  /* Responsive to screen width */
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 576px) {
+    /* Button */
+    .btn-primary {
+        padding: 15px 20px; /* Smaller padding for mobile */
+        font-size: 1rem;    /* Smaller font size for mobile */
+    }
+
+    /* Header */
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .brand {
+        margin: 20px;
+    }
+    .nav-links {
+        gap: 20px; /* Space between nav items */
+    }
+    .banner-title {
+        font-size: 2.8rem; /* Smaller font size for mobile */
+        margin-top: 100px;
+    }
+
+
+
+}
+
